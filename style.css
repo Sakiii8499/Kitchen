@@ -10,18 +10,6 @@
     padding-top: 5px;
 }
 
-#loginbtn {
-            padding: 3px 22px;
-            /*to remove the underline*/
-            font-size: 20px;
-            border-radius: 30px;
-            font-weight: bold;
-        }
-
-#loginbtn:hover {
-            background-color: black;
-            color: white;
-        }
 #navbar {
     position: relative;
     display: flex;
