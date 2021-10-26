@@ -1,55 +1,14 @@
-html{
-    font-size: 62.5%;
-}
-/* CSS Reset */
 *{
     margin: 0;
     padding: 0;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-/* CSS Variables */
-:root{
-    --navbar-height: 5.9rem;
-}
-body{
     overflow-x: hidden;
 }
+
 /* Navigation Bar */
 #navbar{
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0px;
 }
-
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 90%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-/* Navigation Bar: Logo and Image */
-#logo{
-    margin: 1rem 3.4rem;
-}
-
-#logo img{
-    height: 5.9rem;
-    margin: 0.3rem 0.6rem;
-}
-
-
-/* Navigation Bar: List Styling */
 
 #navbar ul{
     display: flex;
@@ -58,15 +17,15 @@ body{
 
 #navbar ul li{ 
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 13px;
 }
 
 #navbar ul li a{
     color: white;
-    font-size: 1.5rem;
+    font-size: 15px;
     display: block;
-    padding: 0.3rem 2.2rem;
-    border-radius: 2rem;
+    padding: 3px 22px;
+    border-radius: 20px;
     text-decoration: none;
 }
 
@@ -75,14 +34,25 @@ body{
     background-color: white;
 }
 
+
+/* Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
 /* Home Section */
+
 #home{
     display: flex;
     flex-direction: column;
-    padding:0.3rem 20rem;
-    height: 55rem;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding-bottom: 5px;
 }
 
 #home::before{ 
@@ -96,189 +66,85 @@ body{
     z-index: -1;
     opacity:0.7;
 }
-
-#home h1{
+#home p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+#home p, #home h1{
     color:black;
     font-family: 'Bree Serif', serif;
-    font-size: 4rem;
-    margin-top: -10%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#home h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    padding-top: 8rem;
 }
 
 #home p{
-    color:black;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Bree Serif', serif;
-    margin-top: 10%;
+    font-size: 30px;
 }
 
-.box {
-    border: .2rem solid black;
-    padding: 1.0rem;
-    border-radius: 4.0rem;
-    text-align: center;
-    background-color: white;
-    width: 18vw;
-    height: 30vh;
-}
 
-.box:hover{
-    box-shadow: 15px 15px 30px;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 5rem;
-    grid-column-gap: rem;
-}
-
-.grid a {
-    text-decoration: none;
-    font-family: cursive;
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: black;
-    padding: .3rem;
-    background-color: white;
-    border: .2rem solid black;
-    border-radius: 2.0rem;
-}
-.grid a:hover {
-    background-color: black;
-    border: .2rem black;
-    border-radius: 2.0rem;
-    color: white;
-}
-.grid img {
-    height: 25vh;
-    width: 17vw;
-    border-radius: 2.0rem;
-    margin-top: 1.0rem;
-}
-.recipes-container{
-    margin-top: -2%;
-}
-.recipes-container h2 {
-    text-align: center;
-    font-family: cursive;
-    font-weight: bold;
-    font-size: 3.0rem;
-    padding-top: 1.0rem;
-    margin-bottom: 3%;
-}
+/* Recipes section */
 
 .recipes-container::before{
     content: "";
     background: url('Home2.jpg') center center/cover;
     position: absolute;
-    height: 140%;
-    width: 100vw;
+    height: 200vh;
+    width: 99vw;
     z-index: -1;
     opacity: 0.6;
 }
-.container{
-    margin-left: 10%;
-}
-#bottom {
+
+.recipes-container h2 {
     text-align: center;
-    padding-top: .5rem;
     font-family: cursive;
-    font-size: 2.0rem;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
 }
-#contact h3 {
-    font-size: 2.5rem;
-    padding-top: 2.0rem;
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap: 70px;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 50px;
 }
-
-.set{
-    margin-top: 10%;
+.grid a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #fff;
+    padding: 7px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #000000;
 }
-
-#contact::before {
-    content: "";
-    position: absolute;
-    background: url('feedback.jpg') no-repeat center/cover;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    opacity: 0.8;
+.grid a:hover{
+    background-color: #000000;
+    color: #fff;
 }
-#contact-box {
+.grid img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    padding-top: 10px;
+}
+.box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3.4rem;
-}
-#contact-box form {
-    width: 35%;
-}
-
-#contact-box label {  
-    font-size: 2rem;
-    font-family: 'Bree Serif';
-    font-weight: bold;
-}
-#form-group{
-    font-size: 3.0rem;
-    justify-content: center;
-}
-
-#contact-box input {
-    width: 90%;
-    padding: 0.5rem;
-    border-radius: 10px;
-    font-size:1.3rem;
-}
-
-#btn {
-    border-radius: 1.0rem;
-    font-weight: bold;
-    width: 10.0rem;
-    padding: .4rem;
-    font-family: cursive;
-    margin-top: 3rem;
-}
-#btn:hover {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-}
-
-.hide{
-    opacity: 0;
-}
-
-#phone{
-    visibility: hidden;
-}
-
-@media (max-width: 1200px){
-    .welcome{
-        display: none;
-    }
-    #phone{
-        visibility: visible;
-        background-color: rgb(46, 6, 46);
-        font-size: 2rem;
-        text-align: center;
-        color: white;
-        height: 100vh;
-    }
-    
-}
-@media (max-height: 550px){
-    .welcome{
-        display: none;
-    }
-    #phone{
-        visibility: visible;
-        background-color: rgb(46, 6, 46);
-        font-size: 2rem;
-        text-align: center;
-        color: white;
-        height: 100vh;
-    }
-    
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 2px solid #000000;
 }
