@@ -12,9 +12,15 @@
         height: 420vh;
     }
 }
-@media(min-height: 813px) and (max-height: 1000px){
+
+@media(min-height: 850px) and (max-height: 1000px){
     .recipes-container::before{
         height: 370vh;
+    }
+}
+@media(min-height: 813px) and (max-height: 850px){
+    .recipes-container::before{
+        height: 350vh;
     }
 }
 @media(max-height: 600px){
