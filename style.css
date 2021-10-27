@@ -92,7 +92,7 @@
     background: url('Home2.jpg') center center/cover;
     position: absolute;
     height: 200vh;
-    width: 99vw;
+    width: 100vw;
     z-index: -1;
     opacity: 0.6;
 }

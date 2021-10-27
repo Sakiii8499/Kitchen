@@ -27,6 +27,9 @@
     .recipes-container::before{
         height: 440vh;
     }
+    #home{
+        padding-bottom: 3px;
+    }
 }
 @media(min-height: 800px) and (max-height: 812px){
     .recipes-container::before{
