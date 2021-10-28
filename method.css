@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+p, ol, #method{
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+}
+
+#ingre{
+    font-size: 24px;
+    margin-left: 200px;
+    text-align: justify;
+    font-weight: bold;
+}
+h1{
+    font-weight: bold;
+    padding-top: 30px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+body::before{
+    content: "";
+    background: url('/Images/casual bg2.jpg') center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+    p, ol, #method, #ingre{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    ol{
+        padding: 10px;
+    }
+    body::before{
+        height: 150vh;
+    }
+}
