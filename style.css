@@ -58,7 +58,7 @@
 #home::before{ 
     content: "";
     position: absolute;
-    background: url('Home1.jpg') no-repeat center center/cover;
+    background: url('Images/Home1.jpg') no-repeat center center/cover;
     height: 100%;
     top:0px;
     left:0px;
@@ -89,7 +89,7 @@
 
 .recipes-container::before{
     content: "";
-    background: url('Home2.jpg') center center/cover;
+    background: url('Images/Home2.jpg') center center/cover;
     position: absolute;
     height: 200vh;
     width: 100vw;
@@ -148,7 +148,7 @@
 
 .welcome::before{
     content: "";
-    background: url('Home2.jpg') center center/cover;
+    background: url('Images/Home2.jpg') center center/cover;
     position: absolute;
     height: 150vh;
     width: 100vw;
